@@ -3,38 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Kenneth Harrison - Personal Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <label id="dm_lable" for="dm">♌</label>
+<body class="bg-primary">
+    <label id="dm_label" for="dm">♌</label>
     <input type="checkbox" id="dm" />
-    <header class="container-fluid">
-        <h1 class="Title">Kenneth Harrison</h1>
-        <img src="Capture.PNG" alt="Me">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Kenneth Harrison</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Content</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section class="about">
-        <h2 class="display-1">About Me</h2>
-        <div class="row mb-5">
-            <p class="col-4 p-3">Your experience with web design and development. I have been in this program for a year and a half. I will graduate in May of 2024.</p>
-
-            <p class="col-4 p-3">What you hope to learn from this course. I hope to learn how to make my website look better and function with ease.</p>
-
-            <p class="col-4 p-3">What you would like to do with your new web design and development knowledge in the future. I would like to find a job in the VA so I can help other Veterans.</p>
-        </div>
+    <main class="container bg-light pt-5">
+        <h1 class="fs-5">Kenneth Harrison</h1>
+        <img src="Capture.PNG" alt="Me" class="img-fluid rounded-circle">
+        <section class="about my-5">
+            <h2>About Me</h2>
+            <div class="row">
+                <div class="lead col-md-4">
+                    <p>I have been in the IT world since 1994 were I servered as a 31U in the Army. After getting out the Army I worked for a couple of different companys installing copper cabling and fiber lines. In 2007 I completed my first degree in Networking Admin. and now I am working on my Web Developyment and Programming degree. I have only been programing for a year and a half.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>I am hoping to learn how to make websites more functional and look like a real site. I have learned a little bite of web manipulation with bootstrap and hope that I have made this aesthetically pleasing as I can with the tools I am using.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>I am hoping to find a job in the Vetrans Affairs system to help Vet get back some of what they have lost and help my self along the way. I have PTSD and it limits what I can do.</p>
+                </div>
+            </div>
         </section>
+    </main>
 
-    <footer class="container-fluid">
+    <footer class="text-center bg-light py-3">
         <p>&copy; 2023 Kenneth W. Harrison Jr.</p>
     </footer>
 
-    <button id="mybutton">Click Me!</button>
+    <button id="mybutton" class="btn btn-light">Click Me!</button>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
-
+    
 </body>
 </html>
