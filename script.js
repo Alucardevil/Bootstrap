@@ -16,7 +16,7 @@ $(document).ready(function (){
 
     $("#mybutton").hover(
         function () {
-            $(this).text("Hover Over Me");
+            $(this).text("Do it! Click Me!");
         },
         function () {
             $(this).text("Click Me");
@@ -24,6 +24,6 @@ $(document).ready(function (){
     );
 
     $("#mybutton").on("click", function(){
-        alert("Button clicked!");
+        alert("Thank You!");
     });
 });
